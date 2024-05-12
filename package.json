@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "start": "concurrently \"python auth.py\" \"python server.py\" \"python app.py\" "
+  },
+  "dependencies": {
+    "typeface-inter": "^3.18.1"
+  }
+}

@@ -1,0 +1,371 @@
+*{
+    scroll-behavior: smooth;
+}
+
+.demo{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1.5rem;
+
+
+
+        .demo__details{
+            color: rgb(227, 227, 227);
+            text-align: center;
+            width: 60%;
+            &__wrapper{
+                h2{
+                    margin-bottom: 0.5rem;
+                    font-size: 3rem;
+                }
+                h3{
+                    font-size: 1.6rem;
+                    color: #cecece;
+                }
+            }
+        }
+
+        .button__tryMica{
+            &__wrapper{
+                margin-top: 2.8rem;
+                padding-bottom: 28rem;
+                a{
+                    text-decoration: none;
+                    padding: 1rem 2rem;
+                    background: #007bff;
+                    border-radius: 1rem;
+                    color: white;
+                    font-weight: 600;
+                    align-items: center;
+                    transition: 0.3s ease;
+                    font-size: 1.4rem;
+
+                    
+                    i{
+                        font-size: 1.4rem;
+                    }
+
+                    &:hover{
+                        // padding: 1.1rem 2.1rem;
+                        transition: 0.3s ease;
+                        background: #0073ee;
+                        // font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+
+        .demo__guide{
+            &__wrapper{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+            &__title{
+                h2{
+                    padding-top: 3rem;
+                    margin-bottom: 3.5rem;
+                    font-size: 3.5rem;
+                    color: rgb(216, 216, 216);
+                }
+            }
+            &__step{
+                &__wrapper{
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+
+                }
+            }
+            &__item{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                padding-bottom: 14rem;
+                .step__title{
+                    margin-bottom: 1.5rem;
+                    background-color: #007bff;
+                    border-radius: 8px;
+                    padding: 1rem;
+                    width: 60%;
+                    h3{
+                        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+                        color: white;
+                        // font-size: 2.8rem;
+                    }
+                }
+                .step__gif{
+                    img{
+                        width: 90%;
+                        border-radius: 5px;
+                    }
+                }
+                .step__description{
+                    width: 70%;
+                    margin-top: 1rem;
+                    p{
+                        color: #e9e9e9;
+                    }
+                }
+            }
+        }
+
+        .demo__surprise{
+            padding-top: 10rem;
+            &__wrapper{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+            }
+            
+            &__title{
+                padding-bottom: 4rem;
+                h3{
+                    font-size: 2.8rem;
+                    font-weight: 800;
+                    color: rgb(216, 216, 216);
+                }
+            }
+
+            &__reveal{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                padding-bottom: 12rem;
+                &__title{
+                    margin-bottom: 2.5rem;
+                    background-color: #007bff;
+                    border-radius: 8px;
+                    padding: 1rem;
+                    width: 65%;
+                    h3{
+                        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+                        color: white;
+                        font-size: 2.5rem;
+                    }
+                }
+                &__desc{
+                    width: 70%;
+                    p{
+                        font-weight: 600;
+                        color: #e9e9e9;
+                    }
+                }
+            }
+
+            &__speech__title__big{
+                padding-bottom: 4rem;
+                h3{
+                    font-size: 2.8rem;
+                    color: rgb(216, 216, 216);
+                }
+            }
+
+            &__speech__title__small{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                padding-bottom: 2.5rem;
+                h3{
+                    margin-bottom: 2.5rem;
+                    background-color: #007bff;
+                    color: white;
+                    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+                    border-radius: 8px;
+                    padding: 1rem;
+                    width: 85%;
+                }
+            }
+
+            &__speech__gif{
+                img{
+                    width: 90%;
+                    border-radius: 5px;
+                }
+            }
+
+            &__speech__desc{
+                width: 70%;
+                margin-top: 1rem;
+                padding-bottom: 4rem;
+                p{
+                    font-weight: 600;
+                    color: #e9e9e9;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (min-width: 700px){
+    .demo{
+        &__wrapper{
+            // gap: 25rem;
+
+            .demo__guide{
+                &__title{
+                    h2{
+                        font-size: 5rem;
+                    }
+                }
+                &__item{
+                    padding-bottom: 17rem;
+                    .step__title{
+                        width: 40%;
+                        margin-bottom: 4rem;
+                        padding: 1.8rem;
+                        h3{
+                            font-size: 2.8rem;
+                        }
+                    }
+                    .step__gif{
+                        img{
+                            width: 60%;
+                        }
+                    }
+                    .step__description{
+                        margin-top: 2rem;
+                        width: 50%;
+                        p{
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+
+            .demo__surprise{
+                &__wrapper{
+                }
+
+                &__title{
+                    padding-bottom: 5rem;
+                    h3{
+                        font-size: 5rem;
+                    }
+                }
+
+                &__reveal{
+                    padding-bottom: 20rem;
+                    &__title{
+                        padding: 1.8rem;
+                        margin-bottom: 4rem;
+                        width: 50%;
+                        h3{
+                            font-size: 2.8rem;
+                        }
+                    }
+                    &__desc{
+                        width: 50%;
+                        p{
+                            font-weight: 600;
+                            font-size: 2rem;
+                        }
+                    }
+                }
+
+                &__speech__title__big{
+                    padding-bottom: 3rem;
+                    h3{
+                        font-size: 4rem;
+                    }
+                }
+
+                &__speech__title__small{
+                    width: 46%;
+                    h3{
+                        padding: 1.8rem;
+                       font-size: 2.4rem; 
+                    }
+                }
+
+                &__speech__gif{
+                    img{
+                        width: 60%;
+                    }
+                }
+
+                &__speech__desc{
+                    width: 50%;
+                    padding-bottom: 2rem;
+                    p{
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+.banner__mica {
+    background-image: url(../components/img/MICA-BG.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+    width: 100%; 
+    max-width: 600px; 
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    margin-top: 2rem;
+  
+    &__wrapper {
+      padding: 20px; 
+    }
+  
+    &__text {
+      color: white;
+      font-size: 5rem;
+  
+      &__wrapper {
+        text-align: center;
+      }
+    }
+  }
+
+
+
+
+
+  @media screen and (max-width: 700px){
+    .banner__mica {
+        margin-top: 10rem;
+        width: 90%; 
+        max-width: 600px; 
+        margin: 0 auto;
+        padding: 20px;
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        margin-top: 2rem;
+      
+        &__wrapper {
+          padding: 20px; 
+        }
+      
+        &__text {
+          color: white;
+          font-size: 3rem;
+      
+          &__wrapper {
+            text-align: center;
+          }
+        }
+      }
+  }

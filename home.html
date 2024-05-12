@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MICA AI</title>
+    <link rel="stylesheet" href="./dist/scss/main.css" />
+    <link rel="icon" type="image/png" href="dist/components/img/mica.png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+    />
+  </head>
+  <body class="height-limit">
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="branding">
+            <img src="./dist/components/img/MICA-lightblue_logo.png" alt="" />
+          </div>
+          <div class="header__nav">
+            <ul>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./demo.html">Demo</a></li>
+              <li><a href="">Health Tips</a></li>
+            </ul>
+
+            <div class="logo__bottom">
+              <img src="dist/components/img/SPOTIFY.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="burger__btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="branding">
+            <div class="branding__wrapper">
+              <img src="./dist/components/img/MICA_logo_lighblue.png" alt="" />
+            </div>
+          </div>
+
+          <div class="header__nav">
+            <ul>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="">Demo</a></li>
+              <li><a href="./index.html">Health Tips</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header> -->
+
+    <div class="home__page__welcome">
+      <div class="container">
+        <div class="home__page__welcome__wrapper">
+          <div class="home__page__text">
+            <div class="home__page__text__wrapper">
+              <div class="home__title">
+                <h1>MICA AI</h1>
+                <h2 id="changingText" class="changing-text">
+                  Medical Information Chat Assistant
+                </h2>
+              </div>
+
+              <div class="home__navpage">
+                <ul>
+                  <li><a href="./index.html">Start Chatting</a></li>
+                  <li><a href="">Health Tips</a></li>
+                  <li><a href="">Advance Chatting</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="home__mica">
+      <img src="./dist/components/img/MICA_HALFHEAD_2.png" alt="" />
+    </div>
+    <script src="./script.js"></script>
+
+    <script>
+      const burgerBtn = document.querySelector(".burger__btn");
+      const headerNav = document.querySelector(".header__nav");
+
+      burgerBtn.addEventListener("click", () => {
+        headerNav.classList.toggle("open");
+        burgerBtn.classList.toggle("open");
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const texts = [
+          "Your health, our priority.",
+          "Healthcare made easy, chat with us!",
+          "Wellness at your fingertips.",
+          "Medical Information Chat Assistant",
+        ];
+        let index = 0;
+        const changingTextElement = document.getElementById("changingText");
+
+        function changeText() {
+          changingTextElement.textContent = texts[index];
+          index = (index + 1) % texts.length;
+        }
+
+        setInterval(changeText, 4000);
+      });
+    </script>
+  </body>
+</html>

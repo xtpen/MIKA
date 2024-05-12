@@ -1,0 +1,201 @@
+.about{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        align-items: center;
+        padding-top: 3rem;
+
+
+
+        .about__details{
+            color: rgb(227, 227, 227);
+            text-align: center;
+            width: 60%;
+            &__wrapper{
+                h2{
+                    margin-bottom: 0.5rem;
+                    font-size: 3rem;
+                }
+                h3{
+                    font-size: 1.6rem;
+                    color: #bcbcbc;
+                }
+
+                .button__tryMica{
+                    &__wrapper{
+                        margin-top: 2.8rem;
+                        a{
+                            text-decoration: none;
+                            padding: 1rem 2rem;
+                            background: #007bff;
+                            border-radius: 1rem;
+                            color: white;
+                            font-weight: 600;
+                            align-items: center;
+                            transition: 0.3s ease;
+                            font-size: 1.4rem;
+
+                            
+                            i{
+                                font-size: 1.4rem;
+                            }
+
+                            &:hover{
+                                // padding: 1.1rem 2.1rem;
+                                transition: 0.3s ease;
+                                background: #0073ee;
+                                // font-size: 1.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.banner__mica {
+    background-image: url(../components/img/MICA-BG.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+    width: 100%; 
+    max-width: 600px; 
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    margin-top: 2rem;
+  
+    &__wrapper {
+      padding: 20px; 
+    }
+  
+    &__text {
+      color: white;
+      font-size: 5rem;
+  
+      &__wrapper {
+        text-align: center;
+      }
+    }
+  }
+
+
+
+
+
+  @media screen and (max-width: 700px){
+    .banner__mica {
+        margin-top: 10rem;
+        width: 90%; 
+        max-width: 600px; 
+        margin: 0 auto;
+        padding: 20px;
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        margin-top: 2rem;
+      
+        &__wrapper {
+          padding: 20px; 
+        }
+      
+        &__text {
+          color: white;
+          font-size: 3rem;
+      
+          &__wrapper {
+            text-align: center;
+          }
+        }
+      }
+  }
+
+
+
+
+
+
+
+
+
+
+  .prompt__side-panel {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 242px; 
+    padding: 14px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    z-index: 1001; 
+    background: #000014;
+    border-right: 1px solid #ccc;
+
+    display: flex;
+    flex-direction: column;
+  
+    .panel__img{
+      &__wrapper{
+        img{
+          width: 15rem;
+        }
+      }
+    }
+    .prompt-list {
+      list-style: none;
+      padding: 0;
+      margin-top: 50px;
+      font-size: 2rem;
+    }
+  
+    .prompt-item {
+      padding: 10px 0;
+      border-bottom: 1px solid #ccc; 
+  
+      &:last-child {
+        border-bottom: none;
+      }
+      
+      a {
+        text-decoration: none;
+        color: white;
+      }
+  
+      &.active {
+        background-color: #ddd; 
+      }
+    }
+  
+    @media screen and (max-width: 1500px) {
+      display: none;
+    }
+  }
+  
+
+
+.branding-prompt{
+  &__wrapper{
+    img{
+      width: 11rem;
+    }
+  }
+}
+
+
+@media screen and (max-width:1500px){
+  .branding-prompt{
+    &__wrapper{
+      img{
+        width: 14rem;
+      }
+    }
+  }
+}

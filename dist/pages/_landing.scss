@@ -1,0 +1,528 @@
+.prompt {
+  background: #000014;
+  height: 89vh;
+}
+
+.mica__heading {
+  &__wrapper {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -1.3rem;
+
+    img {
+      width: 8rem;
+    }
+  }
+}
+
+.dark {
+  background: #000;
+  background-color: #000;
+}
+
+$input-width: calc(100% - 393px);
+
+#chat-container {
+  width: 100%;
+  max-width: 900px;
+  height: 470px;
+  // border: 1px solid #7e7e7e;
+  border: 3px solid #002769;
+  overflow-y: auto;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 1rem;
+  background: #fff;
+}
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+
+  img{
+    width: 300px;
+  }
+}
+
+.user-message {
+  align-self: flex-end;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  max-width: 70%; // Adjust as needed
+}
+
+.bot-message {
+  background-color: #f0f0f0; // Bot message background color
+  color: #000; // Bot message text color
+  border-radius: 10px; // Bot message border radius
+  padding: 10px; // Bot message padding
+  margin-bottom: 10px; // Bottom margin for bot message
+  max-width: 70%; // Adjust as needed
+  position: relative; // Ensure position is relative for positioning the image
+}
+
+.bot-image {
+  display: block;
+  margin: 10px auto; // Center the image
+  max-width: 100%; // Ensure the image does not exceed the width of the message container
+  border-radius: 10px; // Apply border radius to the image
+}
+
+#input-container {
+  margin-top: -2px;
+}
+
+.input__container {
+  display: flex;
+
+  &__wrapper {
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+
+    input[type="text"] {
+      // width: $input-width;
+      min-width: 67%;
+      // width: 85rem;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 3rem;
+      transition: 0.3s ease;
+      background: #f0f0f0;
+
+      &:hover {
+        border-color: #007bff;
+        transition: 0.3s ease;
+      }
+    }
+
+    .btn__prompt {
+      border: none;
+      cursor: pointer;
+      background: none;
+      align-items: center;
+      color: #258eff;
+
+
+      i {
+        font-size: 2.5rem;
+        transition: 0.3s ease;
+
+        &:hover {
+          color: #c1c1c1;
+          transition: 0.3s ease;
+        }
+      }
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px){
+  .prompt{
+    // height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .mica__heading{
+      // padding-top: 5rem;
+    }
+  }
+
+
+  .input__container {
+    display: flex;
+  
+    &__wrapper {
+      justify-content: center;
+      margin: 0 auto;
+      text-align: center;
+  
+      input[type="text"] {
+        // width: calc(120% - 393px);
+        padding: 15px;
+        margin-bottom: 10px;
+        border-radius: 2rem;
+        transition: 0.3s ease;
+        background: #f0f0f0;
+  
+        &:hover {
+          border-color: #007bff;
+          transition: 0.3s ease;
+        }
+      }
+
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// Ensure alignment of profile picture and message in the message container
+.message-container {
+  display: flex;
+  align-items: flex-start; // Align items to the start (left)
+  // margin-bottom: 10px;
+
+  .profile-picture {
+    align-self: flex-start; // Align profile picture to the top
+    margin-right: 10px; // Adjust as needed
+    margin-bottom: 5px; // Adjust as needed
+    width: 35px;
+  }
+}
+
+.home__page__welcome {
+  background: #000014;
+
+  &__wrapper {
+    .home__page__text {
+      display: flex;
+      flex-direction: row;
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+
+      &__wrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+        gap: 3rem;
+        padding-top: 15rem;
+
+        .home__title {
+          color: #fff;
+
+          h1 {
+            font-size: 6rem;
+          }
+
+          h2{
+            display: contents;
+          }
+        }
+
+        .home__navpage {
+          display: flex;
+          flex-direction: column;
+
+          ul {
+            display: flex;
+            li {
+              padding: 0 1rem;
+              transition: 0.4s ease;
+
+              &:hover {
+                transition: 0.3s ease;
+              }
+              a {
+                color: white;
+                text-decoration: none;
+                background: #007bff;
+                padding: 1.4rem 1rem;
+                border-radius: 1rem;
+                font-weight: 800;
+                transition: 0.3s ease;
+
+                &:hover {
+                  background: #006cdf;
+                  transition: 0.3s ease;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 700px){
+  .home__page__welcome {
+  
+    &__wrapper {
+      .home__page__text {
+
+  
+        &__wrapper {
+          padding-top: 18rem;
+  
+          .home__title {
+            h2{
+              display: contents;
+              font-size: 2rem;
+            }
+          }
+  
+          .home__navpage {
+
+  
+            ul {
+              display: flex;
+              flex-direction: column;
+              gap: 4rem;
+              li {
+                padding: 0 1rem;
+                transition: 0.4s ease;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+#mic-button{
+  background: transparent;
+  border: none;
+
+  i{
+    color: #258eff;
+    transition: 0.3s ease;
+    font-size: 2.5rem;
+    cursor: pointer;
+
+
+    &:hover{
+      color: #c1c1c1;
+      transition: 0.3s ease;
+
+    }
+  }
+}
+
+
+
+
+
+
+.home__mica {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: flex-end;
+  height: 40.3vh;
+  background: #000014;
+
+  img {
+    width: 33rem;
+  }
+}
+
+
+
+
+
+@keyframes textDissolve {
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.changing-text {
+  animation: textDissolve 4s linear infinite; /* Adjusted duration to 4s */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.height-limit {
+  background: #000014;
+}
+
+.margin-none {
+  margin: 0;
+}
+
+
+.image-class {
+  width: 300px; /* Set the width to 300 pixels */
+  height: 100px; /* Maintain the aspect ratio */
+}
+
+
+
+img.generated-image {
+  width: 200px;
+  height: 100px;
+}
+
+
+
+.message-time {
+  font-size: 1.2rem; /* Adjust the font size as needed */
+  font-weight: 500;
+  color: #999;
+  margin-bottom: 5px;
+  // margin-top: 5px; /* Adjust margin-top to create space between message and time */
+}
+
+
+
+
+
+
+.prompt-button {
+  position: fixed;
+  top: 122px;
+  right: 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 9999;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+
+  p {
+    margin-left: 0.2rem;
+    font-size: 1.5rem;
+  }
+
+  &:hover {
+    background: #006cdf;
+    transition: 0.3s ease;
+  }
+
+  &:active {
+    margin-top: 0.5rem;
+    transition: 0.3s ease;
+  }
+
+  @media screen and (max-width: 710px) {
+    top: 590px;
+    // right: 18px;
+    font-size: 1.5rem;
+    padding: 8px;
+
+    p {
+      display: none;
+    }
+
+    .fa-solid.fa-angles-down {
+      transform: rotate(180deg); 
+    }
+  }
+}
+
+.prompt-bubble {
+  position: fixed;
+  top: 180px;
+  right: -90%; 
+  width: auto;
+  height: 40rem; 
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  z-index: 9998;
+  transition: right 0.4s ease-in-out; 
+  overflow-y: auto; 
+  max-height: calc(100% - 40px);
+
+  color: white;
+  background: #000a18;
+
+}
+
+.prompt-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.prompt-item {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.prompt-item:hover {
+  // background-color: #f0f0f0;
+  // background: #424449;
+  // background: #0c192b;
+  background: #161d26;
+
+}
+
+.prompt-bubble.active {
+  right: 20px; 
+}
+
+
+
+
+
+
+
+
+/* Styling the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #e0e0e0;
+  border-radius: 10px; /* Radius of the scrollbar thumb */
+}
+
+/* Styling the scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Color of the scrollbar track */
+}
+
+/* Styling the scrollbar corner */
+::-webkit-scrollbar-corner {
+  background-color: transparent; /* Color of the scrollbar corner */
+}
+
+/* Styling the scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}

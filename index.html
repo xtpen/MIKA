@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MICA AI</title>
+    <link rel="stylesheet" href="./dist/scss/main.css" />
+    <link rel="icon" type="image/png" href="dist/components/img/mica.png" />
+    <script
+      src="https://kit.fontawesome.com/29865ec48b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header relative">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="branding-prompt">
+            <div class="branding-prompt__wrapper">
+              <img src="./dist/components/img/MICA-lightblue_logo.png" alt="" />
+            </div>
+          </div>
+          <a href="./home.html">
+            <div class="homepage">
+              <button class="btn__homepage" href="./home.html">
+                <div class="sign">
+                  <svg viewBox="0 0 512 512">
+                    <path
+                      d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="text">Home</div>
+              </button>
+            </div>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section class="prompt">
+      <div class="mica__heading">
+        <div class="container">
+          <div class="mica__heading__wrapper">
+            <img src="./dist/components/img/MICA_HALF.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+
+      <div class="prompt__side-panel">
+        <div class="panel__img">
+          <div class="panel__img__wrapper">
+            <img src="./dist/components/img/MICA-lightblue_logo.png" alt="" />
+          </div>
+        </div>
+        <ul class="prompt-list">
+          <li class="prompt-item"><a href="./about.html">About</a></li>
+          <li class="prompt-item">
+            <a href="">Demo</a>
+          </li>
+          <li class="prompt-item"><a href="">Health Tips</a></li>
+          <li class="prompt-item"><a href="">Advance Chatting</a></li>
+        </ul>
+      </div>
+
+      <div id="chat-container" class="chat-container"></div>
+
+      <div id="input-container" class="input__container">
+        <div class="container">
+          <div id="prompt-button" class="prompt-button">
+            <i class="fa-regular fa-message"></i>
+          </div>
+
+          <div id="prompt-bubble" class="prompt-bubble">
+            <ul id="prompt-list" class="prompt-list">
+              <li class="prompt-item">Hi, MICA!</li>
+              <li class="prompt-item">What is MICA?</li>
+              <li class="prompt-item">I have fever</li>
+              <li class="prompt-item">Where is the nearest Hospital?</li>
+              <li class="prompt-item">How to treat burns?</li>
+              <li class="prompt-item">How to prevent nosebleed?</li>
+              <li class="prompt-item">I have headache</li>
+              <li class="prompt-item">Prinzess</li>
+              <li class="prompt-item">Prompt 8</li>
+              <li class="prompt-item">Prompt 9</li>
+              <li class="prompt-item">Prompt 10</li>
+              <li class="prompt-item">Prompt 10</li>
+              <li class="prompt-item">Prompt 10</li>
+              <li class="prompt-item">Prompt 10</li>
+              <li class="prompt-item">Prompt 10</li>
+              <li class="prompt-item">Prompt 10</li>
+            </ul>
+          </div>
+
+          <div class="input__container__wrapper">
+            <input
+              class="input_prompt"
+              type="text"
+              id="user-input"
+              placeholder="Message MICA..."
+            />
+            <audio id="messageSound" src="sounds/message_sound.wav"></audio>
+            <button
+              class="btn__prompt"
+              onclick="sendMessage()"
+              onmousedown="sound.play()"
+            >
+              <i class="fas fa-paper-plane"></i>
+            </button>
+            <button id="mic-button">
+              <i class="fa-solid fa-microphone"></i>
+            </button>
+
+            <audio id="messageSound">
+              <source src="message_sound.wav" type="audio/wav" />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const promptButton = document.getElementById("prompt-button");
+        const promptBubble = document.getElementById("prompt-bubble");
+
+        promptButton.addEventListener("click", function () {
+          promptBubble.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>
