@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MICA Street Map</title>
+    <link rel="stylesheet" href="./dist/scss/main.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+</head>
+<body>
+    <section class="search__container">
+        <input type="text" class="search__input" placeholder="Enter a location">
+        <button class="search__button">Search</button>
+        <ul class="search__result"></ul>
+    </section>
+
+    <button class="currentBtn">Current Location</button>
+    <div id="map"></div>
+    
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+    <script src="maps.js"></script>
+</body>
+</html>
