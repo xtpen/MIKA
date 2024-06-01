@@ -13,6 +13,252 @@
     src="https://kit.fontawesome.com/29865ec48b.js"
     crossorigin="anonymous"
   ></script>
+  <style>
+    * {
+        scroll-behavior: smooth;
+    }
+    .demo {
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+    }
+    .demo__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1.5rem;
+    }
+    .demo__details {
+        color: rgb(227, 227, 227);
+        text-align: center;
+        width: 60%;
+    }
+    .demo__details__wrapper h2 {
+        margin-bottom: 0.5rem;
+        font-size: 3rem;
+    }
+    .demo__details__wrapper h3 {
+        font-size: 1.6rem;
+        color: #cecece;
+    }
+    .button__tryMica__wrapper {
+        margin-top: 2.8rem;
+        padding-bottom: 28rem;
+    }
+    .button__tryMica__wrapper a {
+        text-decoration: none;
+        padding: 1rem 2rem;
+        background: #007bff;
+        border-radius: 1rem;
+        color: white;
+        font-weight: 600;
+        align-items: center;
+        transition: 0.3s ease;
+        font-size: 1.4rem;
+    }
+    .button__tryMica__wrapper a i {
+        font-size: 1.4rem;
+    }
+    .button__tryMica__wrapper a:hover {
+        transition: 0.3s ease;
+        background: #0073ee;
+    }
+    .demo__guide__wrapper {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .demo__guide__title h2 {
+        padding-top: 3rem;
+        margin-bottom: 3.5rem;
+        font-size: 3.5rem;
+        color: rgb(216, 216, 216);
+    }
+    .demo__guide__step__wrapper {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .demo__guide__item {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 14rem;
+    }
+    .step__title {
+        margin-bottom: 1.5rem;
+        background-color: #007bff;
+        border-radius: 8px;
+        padding: 1rem;
+        width: 60%;
+    }
+    .step__title h3 {
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+        color: white;
+    }
+    .step__gif img {
+        width: 90%;
+        border-radius: 5px;
+    }
+    .step__description {
+        width: 70%;
+        margin-top: 1rem;
+    }
+    .step__description p {
+        color: #e9e9e9;
+    }
+    .demo__surprise {
+        padding-top: 10rem;
+    }
+    .demo__surprise__wrapper {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .demo__surprise__title {
+        padding-bottom: 4rem;
+    }
+    .demo__surprise__title h3 {
+        font-size: 2.8rem;
+        font-weight: 800;
+        color: rgb(216, 216, 216);
+    }
+    .demo__surprise__reveal {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 12rem;
+    }
+    .demo__surprise__reveal__title {
+        margin-bottom: 2.5rem;
+        background-color: #007bff;
+        border-radius: 8px;
+        padding: 1rem;
+        width: 65%;
+    }
+    .demo__surprise__reveal__title h3 {
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+        color: white;
+        font-size: 2.5rem;
+    }
+    .demo__surprise__reveal__desc {
+        width: 70%;
+    }
+    .demo__surprise__reveal__desc p {
+        font-weight: 600;
+        color: #e9e9e9;
+    }
+    .demo__surprise__speech__title__big {
+        padding-bottom: 4rem;
+    }
+    .demo__surprise__speech__title__big h3 {
+        font-size: 2.8rem;
+        color: rgb(216, 216, 216);
+    }
+    .demo__surprise__speech__title__small {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 2.5rem;
+    }
+    .demo__surprise__speech__title__small h3 {
+        margin-bottom: 2.5rem;
+        background-color: #007bff;
+        color: white;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+        border-radius: 8px;
+        padding: 1rem;
+        width: 85%;
+    }
+    .demo__surprise__speech__gif img {
+        width: 90%;
+        border-radius: 5px;
+    }
+    .demo__surprise__speech__desc {
+        width: 70%;
+        margin-top: 1rem;
+        padding-bottom: 4rem;
+    }
+    .demo__surprise__speech__desc p {
+        font-weight: 600;
+        color: #e9e9e9;
+    }
+
+    @media screen and (min-width: 700px) {
+        .demo__wrapper {
+            gap: 25rem;
+        }
+        .demo__guide__title h2 {
+            font-size: 5rem;
+        }
+        .demo__guide__item {
+            padding-bottom: 17rem;
+        }
+        .step__title {
+            width: 40%;
+            margin-bottom: 4rem;
+            padding: 1.8rem;
+        }
+        .step__title h3 {
+            font-size: 2.8rem;
+        }
+        .step__gif img {
+            width: 60%;
+        }
+        .step__description {
+            margin-top: 2rem;
+            width: 50%;
+        }
+        .step__description p {
+            font-size: 2rem;
+        }
+        .demo__surprise__title h3 {
+            font-size: 5rem;
+        }
+        .demo__surprise__reveal {
+            padding-bottom: 20rem;
+        }
+        .demo__surprise__reveal__title {
+            padding: 1.8rem;
+            margin-bottom: 4rem;
+            width: 50%;
+        }
+        .demo__surprise__reveal__title h3 {
+            font-size: 2.8rem;
+        }
+        .demo__surprise__reveal__desc {
+            width: 50%;
+        }
+        .demo__surprise__reveal__desc p {
+            font-weight: 600;
+            font-size: 2rem;
+        }
+        .demo__surprise__speech__title__big h3 {
+            font-size: 4rem;
+        }
+        .demo__surprise__speech__title__small {
+            width: 46%;
+        }
+        .demo__surprise__speech__title__small h3 {
+            padding: 1.8rem;
+            font-size: 2.4rem;
+        }
+        .demo__surprise__speech__gif img {
+            width: 60%;
+        }
+        .demo__surprise__speech__desc {
+            width: 50%;
+            padding-bottom: 2rem;
+        }
+        .demo__surprise__speech__desc p {
+            font-size: 2rem;
+        }
+    }
+  </style>
   </head>
   <body class="height-limit">
   <header class="header relative">

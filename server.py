@@ -22,8 +22,9 @@ dataset = [
     (["Hi"], "Hello! How can I help you?👋", "z-img/MICA_hello.png"),
     (["Hello"], "Hello! How can I help you?👋", "z-img/MICA_hello.png"),
     
-    # SYMPTOMS SECTION
-    # (["KEYWORD"], "RESPONSE", "IMG (OPTIONAL)"),
+    
+    
+    # SYMPTOMS
     (["cough", "coughing"], "Stay hydrated, use cough drops or lozenges, try over-the-counter cough medicines such as Solmux or Bactidol, and consider using a humidifier to moisten the air.", "z-img/medicine/bactidol.jpg", ["Bactidol", "Solmux", "Myracof", "Robitussin"]),
     (["nasal congestion", "nasal", "congestion"], "Use saline nasal sprays or rinses, try over-the-counter decongestants such as Sinutab or Decolgen, use a humidifier, and consider taking a hot shower to help relieve congestion.", "z-img/medicine/sinutab.jpg", ["Sinutab", "Decolgen", "Nafarin-A"]),
     (["sore throat", "throat", "sore", "hoarseness", "hoarse"], "Gargle with warm salt water, drink warm liquids such as tea with honey, use throat lozenges such as Strepsils or Cepacol, and consider over-the-counter pain relievers like acetaminophen or ibuprofen.", "z-img/medicine/strepsils.jpg", ["Cepacol", "Diflam Forte", "Strepsils"]),
@@ -38,7 +39,7 @@ dataset = [
     (["shortness of breath", "shortness", "breath"], "Sit upright, practice breathing exercises, use a fan or open windows for fresh air. For faster relief, consider taking over-the-counter medications such as Asmalin complemented by use of inhaler. Seek medical attention if the shortness of breath is severe or persistent.", "z-img/medicine/asmalin.jpg", ["Asmalin"]),
     (["nosebleed", "nose bleed"], "Lean forward slightly and pinch the nostrils together for several minutes, apply an ice pack to the bridge of the nose, and avoid blowing your nose or picking at it.", None, [""]),
     (["nausea", "nauseous", "vomiting", "vomit", "puke", "puking"], "Stay hydrated with clear fluids, eat small, bland meals, avoid strong odors or foods that trigger nausea, and consider over-the-counter anti-nausea medications such as Dizitab.", "z-img/medicine/dizitab.png", ["Dizitab", "Bonamine"]),
-    (["blurry", "blur", "blurry vision", "blurriness", "double vision", "vision", "cloudy", "see"], "Visit an eye doctor for an eye exam, especially if it's a sudden or persistent issue. Rest your eyes periodically, especially if you spend long hours in front of screens. Ensure proper lighting when reading or using electronic devices.", None, [""]),
+    (["blurry", "blur", "blurriness", "double vision", "vision", "cloudy", "see"], "Visit an eye doctor for an eye exam, especially if it's a sudden or persistent issue. Rest your eyes periodically, especially if you spend long hours in front of screens. Ensure proper lighting when reading or using electronic devices.", None, [""]),
     (["irregular heartbeat", "irregular", "heartbeat", "heart beat", "beat"], "Seek medical attention if you experience irregular heartbeats frequently or if they are accompanied by chest pain, dizziness, or shortness of breath. Maintain a healthy lifestyle with regular exercise and a balanced diet. Manage stress levels through relaxation techniques like deep breathing or meditation.", None, [""]),
     (["dehydration", "dry skin", "dry mouth", "dry lip", "chapped lip", "lips are chapped"], "Drink plenty of fluids, especially water, to stay hydrated. Use moisturizers for dry skin and lip balm for dry lips. Avoid caffeine and alcohol, as they can contribute to dehydration.", None, [""]),
     (["stiff neck", "stiff", "neck"], "Apply heat or cold packs to the affected area. Practice gentle neck stretches and exercises. Maintain good posture and avoid activities that strain the neck muscles. For faster pain relief, consider using medications such as Muskelax.", "z-img/medicine/muskelax.png", ["Muskelax"]),
@@ -87,6 +88,10 @@ dataset = [
     (["hand pain", "hand ache", "hands ache", "hands pain", "hand pain", "pain hand", "pain hands", "hand", "hands", "hands feels painful"], "Rest the affected hand and avoid repetitive movements, apply ice packs to reduce swelling and inflammation, perform gentle hand exercises and stretches, use supportive splints or braces, consider hand therapy or corticosteroid injections for persistent pain.", None, [""]),
     (["body pain", "body ache", "body is aching","ache body", "pain body", "body feels painful"], "Apply heat or cold packs to the affected area, rest, use over-the-counter pain relievers like Dolfenal or Ibuprofen, and consider gentle stretching exercises.", "z-img/medicine/dolfenal.jpg", ["Dolfenal", "Ibuprofen"]),
     (["chest pain", "chest ache","chest", "pain chest", "ache chest", "chest feels aching", "chest feels painful"], "Seek immediate medical attention, especially if the chest pain is severe, prolonged, or accompanied by other symptoms such as difficulty breathing or pain radiating to the arm or jaw.", None, [""]),
+    
+    
+    
+    
     
     # Headache
     (["prevent headache", "headache prevent", "prevention for headache", "headache prevention"], "To prevent headaches, ensure you stay hydrated, maintain a healthy diet, get regular exercise, manage stress, and practice good posture. ", "z-img/biogesic.jpg"),
